@@ -1246,3 +1246,57 @@ main {
 .team-btn:hover {
   background: #7b1fa2;
 }
+
+/* Quick Navigation Box - Dark Green with Greenish White Text */
+.box.nav-shortcuts {
+  background: linear-gradient(135deg, #003300, #001a00);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 25px rgba(0, 255, 100, 0.15);
+  margin: 20px 0;
+  color: #c8facc; /* greenish white */
+  border: 1px solid #00cc66;
+}
+
+.box.nav-shortcuts h3 {
+  font-size: 1.6rem;
+  color: #c8facc;
+  margin-bottom: 15px;
+  text-shadow: 0 0 3px #1f5c33;
+}
+
+/* Navigation Buttons */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.nav-links button {
+  flex: 1 1 45%;
+  min-width: 120px;
+  background: rgba(0, 255, 100, 0.05);
+  color: #c8facc;
+  border: 1px solid #00cc66;
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 0 8px rgba(0, 255, 100, 0.1);
+  text-shadow: 0 0 2px #1f5c33;
+}
+
+.nav-links button:hover {
+  background: #00cc66;
+  color: #001a00;
+  box-shadow: 0 0 18px #00cc66;
+}
+
+/* Mobile-friendly */
+@media (max-width: 600px) {
+  .nav-links button {
+    flex: 1 1 100%;
+  }
+}
